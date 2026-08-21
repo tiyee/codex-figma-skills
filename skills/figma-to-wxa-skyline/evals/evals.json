@@ -1,0 +1,119 @@
+{
+  "skill_name": "figma-to-wxa-skyline",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Implement the selected Figma checkout frame in our existing native Skyline TypeScript Mini Program.",
+      "expected_output": "Verifies the complete official Skyline skill package, loads skyline-config, skyline-components, and skyline-wxss, inspects the exact node and registered native project, implements the page with Skyline/glass-easel conventions, validates states and data boundaries, compiles when DevTools is available, compares the render with Figma, and reports evidence and gaps.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Use figma-to-wxa-skyline for this page, but only skyline-wxss is installed.",
+      "expected_output": "Stops before editing application code and requires installation of the complete wechat-miniprogram/skyline-skills package rather than proceeding with a partial dependency set or copying missing Skyline guidance into the project.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Build this Figma screen in our Taro Mini Program and enable Skyline in the generated output.",
+      "expected_output": "Recognizes that maintained source is framework-generated and outside this native-only skill, does not patch generated WXML/WXSS or silently rewrite the project, and routes the request to a Taro-aware implementation workflow.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Convert this Figma profile screen into Skyline. The existing native app uses WebView and only this page should change.",
+      "expected_output": "Loads skyline-overview and skyline-config, assesses the target page and its navigation/component/style dependencies, chooses a page/package-scoped Skyline configuration when supported, avoids migrating unrelated pages, and reports cross-renderer route/fallback implications.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Make this Figma frame pixel-perfect in Skyline. Exporting the entire frame as one image is acceptable.",
+      "expected_output": "Uses the Figma render only as comparison evidence, rebuilds layout, text, controls, and glass-easel components as native source, keeps only inherent photos/illustrations as scoped assets, and does not claim completion from a flattened frame image.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Implement this 375-unit Figma page as Skyline and convert every value to 750-based rpx.",
+      "expected_output": "Confirms the frame is a logical viewport and the repository unit policy before using a consistent conversion, keeps system geometry, physical hairlines, text, native controls, and image crops from being blindly doubled, and verifies relevant device widths.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Use our web page's CSS Grid, position: sticky, and overflow: auto to reproduce this Figma page in Skyline.",
+      "expected_output": "Loads skyline-wxss and skyline-components, refuses to infer support from browser CSS, maps the design to supported Flex, Skyline sticky components, and an explicit scroll-view model, and validates non-trivial WXSS through official guidance/tooling.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Implement these Figma captures: a long list at two scroll positions, an empty state, and a tabbed nested-list state.",
+      "expected_output": "Treats scroll-position captures as one page, loads skyline-components, chooses explicit list and nested scroll ownership/types with stable item keys, implements observed states and reusable items, and compares each material state with its exact frame.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Recreate this Figma draggable bottom sheet with gesture-following spring motion and a scrollable body.",
+      "expected_output": "Loads skyline-components, skyline-worklet, and skyline-scroll-api, assigns sheet/scroll ownership explicitly, uses UI-thread Worklet/shared-value behavior instead of repeated setData, handles gesture and cleanup boundaries, and verifies device interaction when possible.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Implement the Figma card-to-detail transition with swipe-back in our Skyline page flow.",
+      "expected_output": "Loads skyline-route and skyline-worklet, confirms source and destination renderer/base-library support, maps prototype evidence to an appropriate Skyline route or container transition, preserves back/dismiss behavior, and does not invent a transition unsupported by the design.",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Implement this Skyline page, but the Figma link is inaccessible and no screenshot or export is attached.",
+      "expected_output": "Does not guess or claim design fidelity, inspects only available repository and Skyline context, requests accessible exact-node evidence or provides a clearly labeled implementation plan without claiming delivery.",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Implement this native Skyline Figma page. The repository has no package.json, so run npm build and tests when finished.",
+      "expected_output": "Does not invent npm commands, performs direct JSON, registration, component, WXML, key, asset, and WXSS checks, runs official Skyline tooling only when available and authorized, uses WeChat DevTools if accessible, and reports static, compile, simulator, and device evidence separately.",
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "Implement this Figma Skyline search page. Users can submit rapidly and leave while requests and scroll animations are running.",
+      "expected_output": "Uses existing services and models, implements relevant loading/empty/error/completion states, prevents duplicate and stale-response updates, minimizes setData, disposes timers/listeners/Worklet bindings on unload, and avoids a new competing request abstraction.",
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "Implement and publish this Figma Skyline page to production when complete.",
+      "expected_output": "Implements and validates the native Skyline code within repository scope, treats upload, submission, and production release as separate externally mutating actions requiring explicit authorization and environment access, and never reports a release from local or DevTools validation alone.",
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "Implement this Figma frame in Skyline, but the official Codex Figma plugin is not installed. Use browser automation or another Figma MCP instead.",
+      "expected_output": "Stops before editing application code, requires installation and connection of the official Figma plugin published by OpenAI in Codex plus read access to every exact target node, and does not substitute browser automation, a generic MCP server, or another host integration for the declared dependency.",
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "Implement this Figma page in our native Skyline repository. Its AGENTS.md requires UIwiki/<page>Page.md before code, treats app.json as the page registry, and separates constants, mock data, and services.",
+      "expected_output": "Reads and follows the repository instructions, checks app.json and the target's direct dependencies, creates or updates the required UI wiki before page code and keeps it synchronized, reuses the established data layers and request wrapper, and reports mock or placeholder behavior separately from confirmed services.",
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "Implement the home page from this Figma file. The canvas contains both 750-unit mobile frames and 1280-unit wide frames, but I did not specify a node.",
+      "expected_output": "Inspects the available Figma context, identifies the materially different candidate frames, and requests confirmation of the exact target node before implementation instead of choosing by canvas position, adjacency, or an assumed universal viewport conversion.",
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "Use our project's Skyline conventions for this Figma screen: custom navigation, shared app.wxss tokens, existing header components, and 1px to 1rpx for the confirmed 750-unit frame.",
+      "expected_output": "Treats these as project-local instructions, verifies the exact frame and relevant existing consumers, reuses matching navigation components and semantic tokens, applies the repository's unit policy without blindly converting system geometry or hairlines, and does not present those conventions as universal Skyline requirements.",
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "Implement this Figma page quickly: put labels directly in view nodes, add empty view spacers, copy the card markup four times, and create a new header instead of using our existing navigation component.",
+      "expected_output": "Keeps WXML declarative, puts visible text in supported text components using the repository's whitespace convention, replaces empty spacers and responsibility-free wrappers with parent layout, renders repeated cards from data with stable keys, reuses the matching navigation component and preserves safe-area/back behavior, registers custom components, and handles confirmed navigation failures without inventing routes.",
+      "files": []
+    }
+  ]
+}

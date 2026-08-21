@@ -1,0 +1,71 @@
+{
+  "skill_name": "snapshot-to-figma",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Convert this mobile app screenshot into an editable Figma screen in our existing design file.",
+      "expected_output": "Inspects the screenshot and target Figma system, reconstructs the screen with semantic layers and Auto Layout instead of using the full screenshot as the implementation, reuses applicable components and tokens, compares a rendered result with the source, and reports the exact destination and assumptions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Put this screenshot in Figma and make it pixel-perfect. You can just use the screenshot as a background if that is faster.",
+      "expected_output": "Uses the image only as temporary visual reference, reconstructs UI text, controls, layout, and reusable elements as editable Figma layers, preserves inherent photos or illustrations as scoped image fills, and does not claim completion from a flattened background image.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Recreate these three images: two are different scroll positions of the same page and one is its empty state.",
+      "expected_output": "Maps the source set before building, recognizes the two scroll captures as one screen rather than duplicate screens, creates the observed empty state, shares shell and repeated modules, and documents scrolling behavior and any inference.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Turn this 1440 px desktop mockup into a 390 px mobile Figma screen.",
+      "expected_output": "Does not mechanically scale or squeeze the desktop image, identifies that the target changes information architecture and responsive behavior, asks for direction if the mobile adaptation is materially ambiguous, or follows supplied project rules while documenting the adaptation and source-to-target assumptions.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Recreate this screenshot in Figma. The target file already has a button that is close, but its radius and height differ slightly.",
+      "expected_output": "Checks the existing component and project priority before choosing, prefers supported variants or the semantically correct existing component, avoids detaching the instance or creating near-duplicate tokens solely for visual convenience, and discloses any intentional system-driven mismatch.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Create this screenshot as a Figma design, but the official Codex Figma plugin is not installed.",
+      "expected_output": "Stops before Figma operations, requires installation and connection of the official Figma plugin published by OpenAI in Codex plus write access to the target file, does not substitute another integration or claim that a file or node was created, and labels any reconstruction specification as an incomplete fallback rather than delivered Figma work.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Convert this design image into Figma and also build the React Native screen.",
+      "expected_output": "Completes or scopes the Figma reconstruction through this skill, recognizes React Native implementation as separately authorized work that needs the appropriate code workflow, and does not let code generation replace the required editable Figma result and visual QA.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Recreate this one default-state screenshot and invent all loading, error, permission, and success screens for the entire product.",
+      "expected_output": "Reconstructs the observed state, adds unshown states only when current project requirements support them, avoids fabricating an entire product flow from ambiguous evidence, and records unresolved product behavior as assumptions or focused questions.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Recreate this screen in our existing Figma file. Our repository instructions require every changed screen to update its design-spec page and index.",
+      "expected_output": "Treats the project-required design specification and index as part of the same delivery, identifies them before writing, updates them with the exact Figma destination and material layout, state, interaction, assumption, and change information, and does not invent a different documentation structure.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "The existing shared card is close to this screenshot. Change the master component directly and clean up the old version when you are done.",
+      "expected_output": "Maps consumers, variants, nested instances, interactions, and relevant tokens before changing the shared card; preserves the usable current version while validating a clearly labeled proposal for broad changes; checks affected states plus representative existing and new consumers; and archives or replaces only authorized targets after structural and visual QA.",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "The reconstruction looks right at this frame size, but it uses fixed child widths, manual offsets, blank spacer frames, and copied color values. Please finish it.",
+      "expected_output": "Does not accept the screenshot match alone; removes purposeless wrappers and spacer layers, moves alignment and elasticity to the parent layout, justifies or replaces fixed and absolute positioning, binds existing semantic variables or styles, rerenders after structural correction, and only then performs final visual approval.",
+      "files": []
+    }
+  ]
+}
