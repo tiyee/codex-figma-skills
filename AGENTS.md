@@ -26,8 +26,8 @@ npx skills add tiyee/codex-figma-skills --path skills/<skill-name>
 ```text
 skills/<skill-name>/
 ├── SKILL.md              # 必需：发现信息与核心工作流
-├── README.md             # 可选：中文安装、用法与边界，顶部链接英文版
-├── README.en.md          # 有 README.md 时必需：英文版，顶部链接中文版
+├── README.md             # 可选：英文安装、用法与边界，顶部链接中文版
+├── README.zh-CN.md       # 有 README.md 时必需：中文版本，顶部链接英文版
 ├── agents/               # 可选：客户端元数据；不能作为核心行为依赖
 ├── references/           # 可选：按需加载的详细指南或检查清单
 ├── scripts/              # 可选：确定性的辅助脚本
@@ -36,7 +36,7 @@ skills/<skill-name>/
 
 ## 修改和新增 skill
 
-1. 先完整阅读目标 skill 的 `SKILL.md`、`README.md`，再按正文路由读取相关 `references/` 和 `evals/`。
+1. 先完整阅读目标 skill 的 `SKILL.md`、`README.md` 和 `README.zh-CN.md`，再按正文路由读取相关 `references/` 和 `evals/`。
 2. `SKILL.md` 必须以 YAML frontmatter 开始，至少包含 `name` 和 `description`；`name` 与目录名一致，`description` 应准确说明能力、触发场景和必要边界。
 3. 把共同目的、关键决策、核心工作流和安全边界留在 `SKILL.md`；把平台细节、长检查清单和低频步骤放入 `references/`，并明确加载时机。
 4. 所有路径引用相对于 skill 目录。skill 不得依赖本仓库绝对路径或未声明的其他 skill。
@@ -45,7 +45,7 @@ skills/<skill-name>/
 7. 可示例化的行为变化应新增或更新 `evals/evals.json`。评测应检查决策与可观察结果，不要只匹配标题或固定措辞。
 8. 不提交真实 AppID、API key、token、账号信息、私有 Figma 链接、本机绝对路径、`.DS_Store` 或生成的临时文件。
 9. `figma-to-wxa-skyline` 必须同时保留 Codex 官方 Figma 插件，以及完整 `wechat-miniprogram/skyline-skills` 包的硬依赖和七个官方 skill 的场景路由；不要复制其完整兼容性表或用本仓库内容替代官方包。
-10. 所有 `README.md` 使用中文，配套 `README.en.md` 使用英文；两者顶部必须提供 `[简体中文](README.md) | [English](README.en.md)` 切换链接，用户可见内容变化时同步维护。
+10. 所有 `README.md` 使用英文，配套 `README.zh-CN.md` 使用中文；两者顶部必须提供语言切换链接，英文版使用 `[English](README.md) | [简体中文](README.zh-CN.md)`，中文版使用 `[简体中文](README.zh-CN.md) | [English](README.md)`，用户可见内容变化时同步维护。`SKILL.md` 保持英文，作为 Codex 的运行时 skill 指令。
 
 ## 内容质量要求
 

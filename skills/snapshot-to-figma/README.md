@@ -1,67 +1,67 @@
 # Snapshot to Figma
 
-[简体中文](README.md) | [English](README.en.md)
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-一个面向 Codex 的 Agent Skill，用于把截图、视觉稿和其他 UI 参考图重建为可编辑、可维护的 Figma 设计。
+A Codex Agent Skill for reconstructing screenshots, mockups, and other UI reference images as editable, maintainable Figma designs.
 
-它兼顾视觉还原与生产级结构，包括语义化图层、Auto Layout、可复用组件、设计令牌、响应式行为、渲染对比和无障碍检查。把一张扁平截图直接放入 Figma 不视为完成设计。
+It balances visual fidelity with production-quality structure: semantic layers, Auto Layout, reusable components, design tokens, responsive behavior, rendered comparison, and accessibility checks. It does not treat a flattened screenshot placed in Figma as a completed design.
 
-## 安装
+## Installation
 
-先在 Codex 的插件目录中安装 OpenAI 发布的官方 **Figma** 插件，连接 Figma 账号，并确认插件对目标文件具有写入权限。插件未安装、未连接或权限不足时，本 skill 不会执行 Figma 写入，也不能把规格说明当作已交付设计。
+First install the official **Figma** plugin published by OpenAI from the Codex plugin directory, connect your Figma account, and confirm that the plugin has write access to the target file. If the plugin is missing, disconnected, or lacks permission, this skill will not write to Figma and will not treat a specification as a delivered design.
 
-再安装本 skill。
+Then install this skill.
 
-使用 npm：
+Using npm:
 
 ```bash
 npx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
-使用 pnpm：
+Using pnpm:
 
 ```bash
 pnpm dlx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
-执行首次 Figma 操作前，skill 会按任务加载官方插件提供的 `figma-use`、`figma-generate-design`、`figma-generate-library` 或 `figma-create-new-file` 等指令。
+Before the first Figma operation, the skill loads the applicable instructions supplied by the official plugin, such as `figma-use`, `figma-generate-design`, `figma-generate-library`, or `figma-create-new-file`.
 
-## 使用示例
+## Example requests
 
 ```text
-把这些移动端截图转换为现有 Figma 文件中的可编辑页面。
-在 Figma 中重建这个仪表盘视觉稿，并复用当前组件。
-把这些浅色和深色状态图转换为可维护的组件集与页面流程。
-在 Figma 中匹配这张截图，然后比较渲染结果并修复可见差异。
+Convert these mobile screenshots into editable Figma screens in our existing file.
+Reconstruct this dashboard mockup in Figma and reuse our current components.
+Turn these light and dark state images into a maintainable component set and screen flow.
+Match this screenshot in Figma, then compare the rendered result and fix visible differences.
 ```
 
-## 工作流
+## Workflow
 
-1. 将源图片映射到页面、状态、主题、断点和滚动位置。
-2. 写入前检查项目设计规则和目标 Figma 文件。
-3. 识别项目要求的设计伴生文档、索引和共享资产影响范围。
-4. 将扁平像素转换为语义化布局树和还原策略。
-5. 使用 Auto Layout、变量、样式、组件和可编辑资源进行重建。
-6. 只添加源图或项目需求支持的状态与交互。
-7. 在最终视觉验收前，通过分层、布局、尺寸/定位和变量绑定门禁，并重新比较渲染结果。
-8. 对共享资产变更执行消费页面回归，并完成项目要求的交付文档。
+1. Map source images to screens, states, themes, breakpoints, and scroll positions.
+2. Inspect project design rules and the target Figma file before writing.
+3. Identify required companion documentation, indexes, and the impact surface of shared assets.
+4. Translate flat pixels into a semantic layout tree and fidelity strategy.
+5. Reconstruct with Auto Layout, variables, styles, components, and editable assets.
+6. Add only the states and interactions supported by the source or project requirements.
+7. Pass layer, layout, sizing/positioning, and system-binding gates before final visual approval, then compare the rendered result again.
+8. Regression-check shared-asset consumers and complete project-required handoff documentation.
 
-## 边界
+## Boundaries
 
-- 除非用户单独要求，否则不实现应用代码。
-- 不把完整截图作为最终设计实现。
-- 未检查范围和使用方前，不创建或修改共享 Figma 资产。
-- 大范围修改存量设计时，在方案通过结构与视觉核验前保留现有可用版本。
-- 不假定固定品牌、画板尺寸、文件、页面结构或文档目录。
-- 未做渲染对比时，不声称达到像素级精度。
+- Does not implement application code unless separately requested.
+- Does not embed a full screenshot as the final design.
+- Does not create or modify shared Figma assets without checking scope and consumers.
+- Preserves a usable current version during broad revisions until the proposal passes structural and visual checks.
+- Does not assume a fixed brand, frame size, file, page structure, or documentation directory.
+- Does not claim pixel accuracy without a rendered comparison.
 
-## 目录结构
+## Structure
 
 ```text
 snapshot-to-figma/
 ├── SKILL.md
 ├── README.md
-├── README.en.md
+├── README.zh-CN.md
 ├── evals/
 │   └── evals.json
 └── references/
@@ -69,6 +69,6 @@ snapshot-to-figma/
     └── qa-checklist.md
 ```
 
-## 许可证
+## License
 
 MIT
