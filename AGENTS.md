@@ -16,7 +16,7 @@
 安装单个 skill：
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/<skill-name>
+npx skills add tiyee/codex-figma-skills --path skills/<skill-name>
 ```
 
 ## 目录约定
@@ -91,4 +91,4 @@ git diff --stat
 git diff -- README.md AGENTS.md skills/<skill-name>
 ```
 
-仓库当前未定义 CI、发布脚本或版本号更新流程，不要凭空引入发布步骤或修改版本元数据。对外发布前，优先按 `npx skills add tiyee/figma-skills --path skills/<skill-name>` 验证目标 skill 能否独立安装和使用。
+仓库当前未定义 CI、发布脚本或版本号更新流程，不要凭空引入发布步骤或修改版本元数据。对外发布前，优先按 `npx skills add tiyee/codex-figma-skills --path skills/<skill-name>` 验证目标 skill 能否独立安装和使用。

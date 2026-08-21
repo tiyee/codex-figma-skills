@@ -29,14 +29,14 @@ If the plugin is missing, disconnected, or lacks the required permission, the sk
 Install `snapshot-to-figma`:
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/snapshot-to-figma
+npx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
 For `figma-to-wxa-skyline`, first install the complete official WeChat Skyline skills package, then install this repository skill:
 
 ```bash
 npx skills add wechat-miniprogram/skyline-skills
-npx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+npx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 Do not install only part of the official package. It provides versioned guidance for Skyline configuration, components, WXSS, Worklet, routing, and scroll APIs.
@@ -44,8 +44,8 @@ Do not install only part of the official package. It provides versioned guidance
 You may use pnpm to install this repository's skills after installing the official Skyline dependency with the command above:
 
 ```bash
-pnpm dlx skills add tiyee/figma-skills --path skills/snapshot-to-figma
-pnpm dlx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 Codex can discover an installed skill from the `name` and `description` in `SKILL.md`, or invoke it explicitly.

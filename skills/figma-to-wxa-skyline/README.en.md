@@ -33,13 +33,13 @@ It provides:
 Then install this skill:
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+npx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 Using pnpm for this repository skill:
 
 ```bash
-pnpm dlx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 Codex also needs write access to the target native Mini Program repository. WeChat DevTools and real devices are needed for full runtime validation.

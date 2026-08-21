@@ -29,14 +29,14 @@
 安装 `snapshot-to-figma`：
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/snapshot-to-figma
+npx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
 安装 `figma-to-wxa-skyline` 时，必须先安装完整的微信官方 Skyline skills，再安装本仓库 skill：
 
 ```bash
 npx skills add wechat-miniprogram/skyline-skills
-npx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+npx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 不能只安装其中一部分；该包提供 Skyline 配置、组件、WXSS、Worklet、路由和滚动 API 的版本化规则。
@@ -44,8 +44,8 @@ npx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
 安装本仓库 skill 时也可使用 pnpm（官方 Skyline 依赖仍按上面的命令先安装）：
 
 ```bash
-pnpm dlx skills add tiyee/figma-skills --path skills/snapshot-to-figma
-pnpm dlx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 安装后，Codex 可以根据 `SKILL.md` 的 `name` 和 `description` 自动发现能力，也可以显式点名 skill。

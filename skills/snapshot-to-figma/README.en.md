@@ -15,13 +15,13 @@ Then install this skill.
 Using npm:
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/snapshot-to-figma
+npx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
 Using pnpm:
 
 ```bash
-pnpm dlx skills add tiyee/figma-skills --path skills/snapshot-to-figma
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
 Before the first Figma operation, the skill loads the applicable instructions supplied by the official plugin, such as `figma-use`, `figma-generate-design`, `figma-generate-library`, or `figma-create-new-file`.

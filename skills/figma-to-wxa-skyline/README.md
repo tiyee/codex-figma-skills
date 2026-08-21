@@ -33,13 +33,13 @@ npx skills add wechat-miniprogram/skyline-skills
 然后安装本 skill：
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+npx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 也可以使用 pnpm 安装本仓库 skill：
 
 ```bash
-pnpm dlx skills add tiyee/figma-skills --path skills/figma-to-wxa-skyline
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/figma-to-wxa-skyline
 ```
 
 Codex 还需要具有目标原生小程序仓库的写入权限。完整运行时验证需要微信开发者工具和真机。

@@ -15,13 +15,13 @@
 使用 npm：
 
 ```bash
-npx skills add tiyee/figma-skills --path skills/snapshot-to-figma
+npx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
 使用 pnpm：
 
 ```bash
-pnpm dlx skills add tiyee/figma-skills --path skills/snapshot-to-figma
+pnpm dlx skills add tiyee/codex-figma-skills --path skills/snapshot-to-figma
 ```
 
 执行首次 Figma 操作前，skill 会按任务加载官方插件提供的 `figma-use`、`figma-generate-design`、`figma-generate-library` 或 `figma-create-new-file` 等指令。
